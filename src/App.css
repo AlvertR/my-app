@@ -1,21 +1,4 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +7,52 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  border: 2px solid white;
+  margin: 20px 10px;
+  display: flex;
+  /* justify-content: space-between; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .container:nth-child(3n) {
+  height: 200px;
+} */
+/* .container:first-child {
+  height: 200px;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+} */
+
+.container:last-child {
+  height: 300px;
+  /* flex-wrap: wrap; */
+}
+
+.home {
+  background-color: orange;
+  color: white;
+  flex: 1 1 200px;
+  /* flex-grow: 1; */
+  /*abarca todo el espacion dividiendolo segun los elemenos hijos que tengan la propiedad */
+  /* flex-shrink: 2; */
+  /*ocupa el espacio minimo*/
+  /* flex-basis: 200px; */
+  /*tamaño base*/
+}
+
+.search {
+  background-color: green;
+  color: white;
+  flex: 2 1 200px;
+  /* flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 200px; */
+}
+
+.logout {
+  background-color: darkorange;
+  color: white;
+  flex: 3 1 200px;
+  /* flex-grow: 2; */
 }
